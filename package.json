@@ -10,8 +10,6 @@
     "build": "tsc -p tsconfig.json",
     "check": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
