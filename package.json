@@ -1,5 +1,5 @@
 {
-  "name": "node-exercises",
+  "name": "node-playground",
   "version": "1.0.0",
   "description": "Node + TypeScript playground",
   "main": "dist/main.js",
