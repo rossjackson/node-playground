@@ -1,9 +1,9 @@
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
-import { playgroundFunctions } from "./playgroundFunctions.js";
+import { playgroundMapper } from "./playgroundMapper.js";
 
 const promptForFunctionName = async (): Promise<string> => {
-  const available = Object.keys(playgroundFunctions);
+  const available = Object.keys(playgroundMapper);
   const rl = createInterface({ input, output });
 
   console.log("Available functions:");
@@ -16,11 +16,11 @@ const promptForFunctionName = async (): Promise<string> => {
 };
 
 const run = async (functionName: string): Promise<void> => {
-  const fn = playgroundFunctions[functionName];
+  const fn = playgroundMapper[functionName];
 
   if (!fn) {
     console.error(`Unknown function "${functionName}".`);
-    console.log(`Try one of: ${Object.keys(playgroundFunctions).join(", ")}`);
+    console.log(`Try one of: ${Object.keys(playgroundMapper).join(", ")}`);
     process.exitCode = 1;
     return;
   }
