@@ -78,7 +78,7 @@ const validateAndSortWorkflow = (steps: Step[]) => {
 
     // cycle detection
     // if we couldn't process every node, there is a deadlock/cycle
-    if (executionOrder.length !== steps.length) {
+    if (executionOrder.length !== top.length) {
         throw new Error('CIRCULAR_DEPENDENCY')
     }
 
