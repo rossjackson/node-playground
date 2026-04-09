@@ -1,5 +1,6 @@
 import { asyncGenerator } from "./playground/asyncGenerator/asyncGenerator.js";
 import { clauseEvaluator } from "./playground/clauseEvaluator/clauseEvaluator.js";
+import { pendingQueue } from "./playground/pendingQueue/pendingQueue.js";
 import { rollingConcurrency } from "./playground/rollingConcurrency/rollingConcurrency.js";
 import { topologicalSorting } from "./playground/topologicalSorting/topologicalSorting.js";
 
@@ -8,6 +9,7 @@ export type PlaygroundFn = () => void | Promise<void>;
 export const playgroundMapper: Record<string, PlaygroundFn> = {
   asyncGenerator,
   clauseEvaluator,
+  pendingQueue,
   rollingConcurrency,
   topologicalSorting
 };
