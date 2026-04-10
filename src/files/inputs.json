@@ -1,0 +1,15 @@
+[
+  [
+    { "timestamp": 1, "contractId": "c1", "action": "CREATE", "userId": "u1" },
+    {
+      "timestamp": 2,
+      "contractId": "c1",
+      "action": "ADD_APPROVER",
+      "userId": "u2"
+    },
+    { "timestamp": 3, "contractId": "c1", "action": "APPROVE", "userId": "u2" },
+    { "timestamp": 4, "contractId": "c2", "action": "CREATE", "userId": "u3" },
+    { "timestamp": 5, "contractId": "c1", "action": "PUBLISH", "userId": "u1" },
+    { "timestamp": 6, "contractId": "c2", "action": "REJECT", "userId": "u4" }
+  ]
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "c1": { "status": "PUBLISHED", "approvers": ["u2"], "owner": "u1" },
+    "c2": { "status": "REJECTED", "approvers": [], "owner": "u3" }
+  }
+]
